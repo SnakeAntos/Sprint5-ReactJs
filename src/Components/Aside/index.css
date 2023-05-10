@@ -1,0 +1,100 @@
+.aside-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5%;
+  background-color: hsl(217, 28%, 15%);
+}
+.aside-img-container {
+  background-image: url(images/illustration-stay-productive.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+  width: 520px;
+  height: 365px;
+}
+.aside-text-container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aside-h2-title {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 3rem;
+}
+.aside-p-paragraph {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+  margin: 1% 0 1% 0;
+  opacity: 60%;
+}
+.aside-a-container {
+  display: flex;
+  align-items: center;
+}
+.aside-a-circle {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(176, 68%, 64%);
+  margin-left: 10px;
+  position: relative;
+}
+
+.aside-a-circle::after {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 1px;
+  background-color: hsl(176, 68%, 64%);
+  bottom: -2px;
+  left: -10px;
+}
+
+.aside-a-link {
+  color: hsl(176, 68%, 64%);
+  text-decoration: underline;
+}
+.aside-a-link:hover {
+  color: hsl(176, 33%, 48%);
+}
+
+@media (max-width: 375px) {
+
+.aside-img-container { 
+  width: 360px;
+  height: 220px;
+ 
+}
+.aside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;  
+  background-color: hsl(217, 28%, 15%);
+  margin-bottom: 5%;
+  padding-bottom: 15px;
+}
+.aside-h2-title {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.aside-p-paragraph {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+  margin: 1% 0 1% 0;
+  width: 90%;
+  opacity: 80%;
+}
+}

@@ -1,0 +1,156 @@
+.footer-container {
+  background-color: #0a1a22;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 5rem 20px 5% 20px;
+}
+.footer-logo-container {
+  width: 100%;
+  display: flex;
+  margin-left: 25%; /*Por ahora pongo esto en realidad habria que reemplazar quizas todo por un grid para alinear
+  el logo-container con los elementos de abajo*/
+}
+.footer-logo {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 156px;
+  height: 52px;
+  background-image: url(icons/logo.svg);
+  margin-right: 10px;
+}
+.footer-inner-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3%;
+}
+.footer-items-container {
+  display: flex;
+}
+.footerItem-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.footerItem-p {
+  color: white;
+  opacity: 80%;
+  margin-left: 4px;
+}
+.footerItem-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+.icon1 {
+  background-image: url(icons/icon-location.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon2 {
+  background-image: url(icons/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.icon3 {
+  background-image: url(icons/icon-email.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.footer-menu-container {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+.footer-menu-div {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 20px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  filter: invert(100%);
+}
+.footer-social {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 4rem;
+}
+.footerMenuItem-a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.footerMenuItem-a:hover {
+  text-decoration: none;
+  color: hsl(198, 60%, 50%);
+}
+.iconSocialFacebook {
+  background-image: url(../../../public/icons/icon-facebook.svg);
+}
+.iconSocialTwitter {
+  background-image: url(../../../public/icons/icon-twitter.svg);
+}
+.iconSocialInstagram {
+  background-image: url(../../../public/icons/icon-instagram.svg);
+}
+
+@media (max-width: 375px) {
+  .footer-container {
+    background-color: #0a1a22;
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 180px 0 0 0;
+  }
+  .footer-logo-container {
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+  }
+  .footer-inner-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4%;
+  }
+  .footer-items-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+  .footerItem-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footerItem-p {
+    width: 80vw;
+  }
+  .footer-menu-container {
+    flex-direction: column;    
+  }
+  .footer-menu-div{
+    margin-bottom: 1.5rem;
+  }
+  .footer-social {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    margin-bottom: 3rem;
+  }
+}
